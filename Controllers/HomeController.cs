@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Aplicativoweb.Models;
+using AplicativoWeb.Models;
 
 namespace Aplicativoweb.Controllers;
 

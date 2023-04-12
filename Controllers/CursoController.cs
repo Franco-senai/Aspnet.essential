@@ -1,6 +1,6 @@
 
- 
-using AplicativoWeb.Models;     // camada models
+
+using AplicativoWeb.Models;
 using Microsoft.AspNetCore.Mvc; // microsoft
 //conjunto de Classes
 
@@ -33,17 +33,26 @@ public IActionResult Index(){
     c1.TituloMarketing = "Crie Aplicativos Dinamicos";
 
     // define o componente da função GET
-    ViewData["desc"]    = c1.Descricao;
-    ViewData["titInt"]  = c1.Titulointerno;
-    ViewData["titMark"] = c1.TituloMarketing;
     
+    
+    ViewData["curso"] = c1; // passa o objeto para dentro do ViewData (c1 o objeto)
+     
+     return View();
+    
+}
+
+public IActionResult Create(){
+
+    ViewData["titulo"]="Cadastro de Cursos";
+    ViewBag.DataHora = DateTime.Now;
 
     return View();
 
 
 
-    
-} 
+
+
+}
 
 
 }

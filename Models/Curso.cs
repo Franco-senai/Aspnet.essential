@@ -2,13 +2,14 @@
 
 namespace AplicativoWeb.Models;
 
-public class Curso {
+public class Curso
+{
 
-    public int Id                   { get; set; }
-    public string? TituloMarketing  { get; set; }
+    public int Id { get; set; }
+    public string? TituloMarketing { get; set; }
 
-    public string? Titulointerno    { get; set; }
+    public string? Titulointerno { get; set; }
 
-    public string? Descricao        { get; set; }
+    public string? Descricao { get; set; }
 
 }
